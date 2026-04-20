@@ -4,4 +4,4 @@
 2. Open the notebook in Colab using the badge in the README
 3. In the left sidebar, click the **🔑 icon → Add new secret**
    - Name: `GEMINI_API_KEY`, Value: your key, toggle **Notebook access** on
-4. Click **Runtime → Run all**
+4. Run cells one by one using **Shift + Enter**
