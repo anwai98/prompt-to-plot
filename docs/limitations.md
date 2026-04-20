@@ -54,7 +54,7 @@ The LLM sometimes generates unnecessarily verbose or convoluted code for a simpl
 
 ---
 
-## 8. Hallucinated column names
+## 7. Hallucinated column names
 
 The LLM may invent a plausible-sounding column name that doesn't exist in your DataFrame.
 
@@ -64,7 +64,7 @@ The LLM may invent a plausible-sounding column name that doesn't exist in your D
 
 ---
 
-## 7. Plotly not rendering in Colab
+## 8. Plotly not rendering in Colab
 
 Plotly charts sometimes appear blank in Google Colab, especially with `fig.show()`.
 
