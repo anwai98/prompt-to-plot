@@ -102,7 +102,27 @@ Each step is a new prompt — you don't need to ask for everything at once.
 
 ---
 
-## 9. What to Do When the Plot is Wrong
+## 9. Gene Expression / Bioinformatics Prompts
+
+These datasets have conventions worth spelling out explicitly.
+
+**Volcano plot:**
+> "Scatter plot: x = `log2fc`, y = `-log10(pvalue)`. Color points red if `significant == True`, grey otherwise. Add dashed horizontal line at y = 1.3 (p = 0.05) and vertical lines at x = ±1. Label the top 5 significant genes by absolute `log2fc` with their `gene` name. Use matplotlib."
+
+**Heatmap of gene expression:**
+> "Heatmap of the expression matrix. Rows = genes, columns = samples. Use a red-blue diverging colormap centered at 0. Add row and column labels. Cluster rows by similarity. Use seaborn."
+
+**MA plot:**
+> "Scatter plot: x = mean expression (`baseMean`, log scale), y = `log2fc`. Color points by `significant`. Add a horizontal line at y = 0. Use matplotlib."
+
+**Gene expression across cell types:**
+> "Box plot of expression level for each `cell_type`. Overlay individual data points as a strip plot. Sort cell types by median expression descending. Use seaborn."
+
+**Tip:** If your DataFrame has a `gene` or `gene_name` column, mention it explicitly so the LLM uses it for labels rather than the row index.
+
+---
+
+## 10. What to Do When the Plot is Wrong
 
 - **Wrong chart type**: Be more explicit — "I want a BAR chart, not a line chart"
 - **Wrong columns used**: Name the exact column — "Use `exam_score`, not `assignments`"

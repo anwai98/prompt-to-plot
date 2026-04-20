@@ -54,6 +54,16 @@ The LLM sometimes generates unnecessarily verbose or convoluted code for a simpl
 
 ---
 
+## 8. Hallucinated column names
+
+The LLM may invent a plausible-sounding column name that doesn't exist in your DataFrame.
+
+**Example:** Your DataFrame has `log2_fold_change` but the LLM writes `log2fc`.
+
+**Fix:** Always run `df.columns.tolist()` before prompting and paste the exact names into your request — "use the column named `log2_fold_change`, not `log2fc`". The notebook sends column names automatically, but being explicit in the prompt removes ambiguity.
+
+---
+
 ## 7. Non-determinism
 
 Running the same prompt twice may produce different code. This is normal — LLMs are probabilistic. If one run produces a bad plot, just re-run the cell.
