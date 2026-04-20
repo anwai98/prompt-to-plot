@@ -64,6 +64,30 @@ The LLM may invent a plausible-sounding column name that doesn't exist in your D
 
 ---
 
-## 7. Non-determinism
+## 7. Plotly not rendering in Colab
+
+Plotly charts sometimes appear blank in Google Colab, especially with `fig.show()`.
+
+**Fix:** Use the Colab-compatible renderer explicitly:
+
+```python
+import plotly.io as pio
+pio.renderers.default = 'colab'
+fig.show()
+```
+
+Or save to HTML and download:
+
+```python
+fig.write_html('plot.html')
+from google.colab import files
+files.download('plot.html')
+```
+
+If you ask Gemini for a plotly chart and the output is blank, add "set `pio.renderers.default = 'colab'` before calling `fig.show()`" to your prompt.
+
+---
+
+## 9. Non-determinism
 
 Running the same prompt twice may produce different code. This is normal — LLMs are probabilistic. If one run produces a bad plot, just re-run the cell.

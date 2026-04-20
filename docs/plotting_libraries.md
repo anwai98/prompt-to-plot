@@ -123,3 +123,19 @@ An interactive visualisation library. Charts render as HTML and support hover, z
 | Gene expression heatmap | seaborn (`clustermap`) |
 | Volcano plot | matplotlib or plotly |
 | Quick prototype | seaborn or plotly express |
+
+### Quick decision guide
+
+```
+Need interactivity (hover/zoom)?
+  → plotly
+
+Static figure for a paper or report?
+  → matplotlib
+
+Working with groups, distributions, or statistics?
+  → seaborn
+
+Not sure?
+  → seaborn for static, plotly for exploratory
+```
