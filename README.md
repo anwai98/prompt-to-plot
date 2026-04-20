@@ -1,2 +1,9 @@
 # prompt-to-plot
-A tutorial notebook for generating data visualization using LLMs
+
+A hands-on Google Colab tutorial for generating data visualisations using natural language prompts and Gemini. Covers matplotlib, seaborn, and plotly with ready-to-use dummy datasets.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anwai98/prompt-to-plot/blob/main/llm_plotting_with_gemini.ipynb)
+
+## Setup
+
+Before running the notebook, add your [Gemini API key](https://aistudio.google.com/app/apikey) to Colab Secrets (🔑 icon in the left sidebar) under the name `GEMINI_API_KEY`.
