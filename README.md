@@ -6,4 +6,4 @@ A hands-on Google Colab tutorial for generating data visualisations using natura
 
 ## Setup
 
-Before running the notebook, add your [Gemini API key](https://aistudio.google.com/app/apikey) to Colab Secrets (🔑 icon in the left sidebar) under the name `GEMINI_API_KEY`.
+See [INSTRUCTIONS.md](INSTRUCTIONS.md).
