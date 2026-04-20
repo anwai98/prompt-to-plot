@@ -7,3 +7,11 @@ A hands-on Google Colab tutorial for generating data visualisations using natura
 ## Setup
 
 See [INSTRUCTIONS.md](INSTRUCTIONS.md).
+
+## Contents
+
+| Folder / File | Description |
+|---|---|
+| [llm_plotting_with_gemini.ipynb](llm_plotting_with_gemini.ipynb) | Main notebook |
+| [examples/](examples/) | Executed notebook with real outputs |
+| [docs/](docs/) | Reference guides: LLM models, prompting tips, plotting libraries |
