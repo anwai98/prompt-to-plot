@@ -1,5 +1,7 @@
 # Instructions
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/anwai98/prompt-to-plot/blob/main/llm_plotting_with_gemini.ipynb)
+
 1. Get a free Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey)
 2. Open the notebook in Colab using the badge in the README
 3. In the left sidebar, click the **🔑 icon → Add new secret**
