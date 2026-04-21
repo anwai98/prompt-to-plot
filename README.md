@@ -15,3 +15,7 @@ See [INSTRUCTIONS.md](INSTRUCTIONS.md).
 | [llm_plotting_with_gemini.ipynb](llm_plotting_with_gemini.ipynb) | Main notebook |
 | [examples/](examples/) | Executed notebook with real outputs |
 | [docs/](docs/) | Reference guides: LLM models, prompting tips, plotting libraries |
+
+## Slides
+
+[Google Slides](https://docs.google.com/presentation/d/1SShXRkH2cojH43Ig_FB-gcW6HYYZrz1TO4bGCVRGrHc/edit?usp=sharing)
